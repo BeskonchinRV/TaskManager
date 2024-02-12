@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+}
+
+#app {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header, .footer {
+    background-color: #FF6347;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #FF0000; /* Красная граница */
+}
+
+.main {
+    padding: 20px;
+    background-color: #f5f5dc;
+}
+
+.tasks {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+    border: 1px solid #bdc3c7; /* Светло-серый цвет границы */
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+li span {
+    position: absolute;
+    left: 10px;
+}
+
+.completed {
+    background-color: #d1f2eb; /* Светло-зеленый цвет для выполненных задач */
+}
+
+.deleted {
+    background-color: #fdecea; /* Светло-красный цвет для удаленных задач */
+}
+
+li button {
+    background-color: #ecf0f1; /* Белый цвет кнопок */
+    color: #34495e; /* Темно-синий цвет текста кнопок */
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    right: 10px;
+    display: inline-block;
+}
+
+button {
+    background-color: #0074cc; /* Темно-синий цвет кнопок */
+    color: #ecf0f1; /* Белый цвет текста кнопок */
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    align: right;
+}
+
+button:active {
+    background-color: #000000; /* Черный цвет при нажатии */
+    color: #ffffff; /* Белый цвет текста при нажатии */
+}
+
+input {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+#task-type {
+    padding: 8px;
+    border: 2px solid #000000; /* Цвет границ по умолчанию */
+    border-radius: 5px;
+}
+
+#task-type option {
+    background-color: #f5f5dc; /* Бежевый цвет фона */
+    color: #333; /* Темный цвет текста */
+}
+
+#task-type option:checked {
+    background-color: #00cc00; /* Синий цвет для выбранного элемента */
+    color: #fff; /* Белый цвет текста для выбранного элемента */
+    border: 5px solid #000000; /* Синяя граница для выбранного элемента */
+}
